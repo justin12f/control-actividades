@@ -87,3 +87,4 @@ El repositorio que se actualiza con Sync Fork es **mi fork, alojado en GitHub** 
 - **git pull** actualiza mi **repositorio local** trayendo los cambios desde un repositorio remoto que ya tengo configurado (normalmente `origin`, es decir, mi propio fork). No tiene relación directa con el repositorio original a menos que yo haya configurado explícitamente `upstream` como remoto adicional.
 
 **Explicación:** En un flujo de trabajo con Fork, en realidad existen tres copias del proyecto: el repositorio original (upstream), mi fork en GitHub (origin) y mi copia local. Mantenerlas sincronizadas requiere dos pasos distintos: primero traer los cambios del original hacia mi fork (Sync Fork), y después traer los cambios de mi fork hacia mi copia local (git pull). Omitir el primer paso puede hacer que mi fork quede desactualizado y que, al intentar proponer cambios, se generen conflictos con el proyecto original.
+
